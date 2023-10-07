@@ -4,6 +4,7 @@
 
 int main() {
     VocaList = (voca*) malloc(sizeof(voca));    // 先弄一个结构体的空间
+    srand(time(NULL));        // 用时间做种，但是返回的类型可能会大于int，在考虑用不用(unsigned int)一下
     char input_1[MAX_INPUT] = {}, input_2[MAX_INPUT] = {}, rec[MAX_SAVE] = {};
     int input_0, exit_0 = 0, exit_1 = 0;
     printf("Welcome to the SC balabala!\n1.add word\n2.search for word\n3.delete word\n4.test\n5.exit_0\n");

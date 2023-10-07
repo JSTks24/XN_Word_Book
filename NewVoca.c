@@ -59,7 +59,6 @@ char* add_voca(char* in_word, char* in_meaning) {
 
 char* rand_voca(){
     int random = 0;
-    srand(time(NULL));        // 用时间做种，但是返回的类型可能会大于int，在考虑用不用(unsigned int)一下
     if(voca_num == 0) {
         printf("......But you did not add vocabulary just now!\n");     // 如果在这之前没有存储单词的话，就实话实说，main里的函数也不会触发
         return "6";
