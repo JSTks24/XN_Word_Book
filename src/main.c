@@ -15,7 +15,7 @@ void XN_gets(char* input, int max) {
 
 int call_menu() {
     char input_1[MAX_INPUT] = {0}, input_2[MAX_INPUT] = {0};
-    int input_0, exit = 0, rec = 0;
+    int input_0 = 0, exit = 0, rec = 0;
     printf("Welcome to the SC balabala!\n1.add word\n2.search for word\n3.delete word\n4.test\n5.exit\n");
     for(;exit == 0;) {
         printf("Input the number:\n");
