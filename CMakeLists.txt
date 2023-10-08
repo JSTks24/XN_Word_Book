@@ -3,4 +3,5 @@ project(XNStudyVoca C)
 
 set(CMAKE_C_STANDARD 11)
 
-add_executable(XNStudyVoca main.c)
+add_executable(XNStudyVoca src/main.c
+        src/VocaCtl.c)
