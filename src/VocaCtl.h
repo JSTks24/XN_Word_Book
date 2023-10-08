@@ -1,9 +1,7 @@
-#define MAX_INPUT 50
+#ifndef FST_INC
+#define FST_INC
 
-#define STR_SUCCESS "Success!"
-#define STR_FAILURE "Failure!"
-#define STR_NO_FOUND "No Found!"
-
+#include "MsgDef.h"
 
 typedef struct Vocabulary{
     char* word;
@@ -13,10 +11,16 @@ typedef struct Vocabulary{
 extern voca* VocaList;
 extern int voca_num;
 
+void voca_init();
+
+//void voca_close();        //清空所有内存，准备退出
+
 int search_voca(char* in_word);       //查找单词
 
 int add_voca(char* in_word, char* in_meaning);     // 添加单词
 
-//char* del_voca();        // 删除单词
+//int del_voca();        // 删除单词
 
 int rand_voca();       // 随机取词
+
+#endif
